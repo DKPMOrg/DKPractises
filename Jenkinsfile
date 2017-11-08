@@ -1,6 +1,7 @@
 node {
     stage('Source Code Checkout') { // for display purposes
      echo 'source code is checkout out'
+     git credentialsId: 'Github-ID', url: 'https://github.com/DKPMOrg/DKPractises.git'
    }
    stage('Build and Test') {
      echo 'Build is triggered with test execution'
